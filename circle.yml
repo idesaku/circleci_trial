@@ -1,0 +1,15 @@
+machine:
+  timezone: Asia/Tokyo
+  ruby:
+    version: 2.1.6
+  node:
+    version: 0.12.7
+
+test:
+  override:
+    - which ruby
+    - ruby --version
+    - which node
+    - node --version
+    - which npm
+    - npm --version
